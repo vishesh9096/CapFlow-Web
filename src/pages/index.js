@@ -11,6 +11,7 @@ import WhyUs from 'sections/why-us';
 import SubscribeUs from 'sections/subscribe-us';
 import Blog from 'sections/blog';
 import HappyCustomer from 'sections/happy-customer';
+import YoutubePlayer from 'components/YouubePlayer';
 
 export default function IndexPage() {
   return (
@@ -23,14 +24,17 @@ export default function IndexPage() {
         />
 
         <Banner />
+        
+
         <Services />
         <WhyUs />
         <Testimonials />
         <HappyCustomer/>
         {/* <OurTeam /> */}
         {/* <OtherServices /> */}
+        {/* <OtherServices /> */}
         
-        {/* <Blog /> */}
+        
         <SubscribeUs />
       </Layout>
     </ThemeProvider>

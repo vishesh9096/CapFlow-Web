@@ -61,8 +61,8 @@ const OtherServices = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Other services you must appreciate"
-          description="Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred."
+          title="Our Products"
+        
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
@@ -78,7 +78,7 @@ export default OtherServices;
 const styles = {
   section: {
     backgroundColor: '#F9FAFC',
-    pt: [9, 9, 9, 11],
+    pt: [9, 9, 9, 14],
     pb: [9, 9, 9, 12, 12, 14],
   },
   heading: {

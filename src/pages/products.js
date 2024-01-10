@@ -11,6 +11,7 @@ import WhyUs from 'sections/why-us';
 import SubscribeUs from 'sections/subscribe-us';
 import Blog from 'sections/blog';
 import HappyCustomer from 'sections/happy-customer';
+import UltimateFeatures from 'sections/UltimateFeatures';
 
 export default function products() {
   return (
@@ -21,6 +22,8 @@ export default function products() {
           title="Capflow"
           description="Your Trusted financial Advisor"
         />
+        <OtherServices/>
+        
 
        
       </Layout>

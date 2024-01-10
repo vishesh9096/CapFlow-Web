@@ -54,8 +54,7 @@ const Services = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Services we offer"
-          description="We specialize in helping businesses raise funds via debt."
+          title="Our Products"
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
@@ -71,7 +70,6 @@ export default Services;
 
 const styles = {
   section: {
-    backgroundColor: rgba('#FFF5ED', 0.5),
     pt: [11, 11, 11, 12, 12, 12, 14],
     pb: [7, 7, 7, 9, 9, 10, 11],
   },

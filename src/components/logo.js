@@ -9,7 +9,9 @@ import {  Box, Container, Button, Image } from 'theme-ui';
 export default function Logo({ isSticky, footer, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
-        <Image variant="avatar" src={caplogo} alt="illustration" /> 
+        <Image 
+        sx={{width:55}}
+        variant="avatar" src={caplogo} alt="illustration" /> 
     </Link>
   );
 }

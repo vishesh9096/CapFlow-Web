@@ -1,9 +1,10 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Button, Image } from 'theme-ui';
+import { jsx, Box, Container, Button, Image,Input, Flex, Checkbox, Label,Embed} from 'theme-ui';
 import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import illustration from 'assets/images/banner-illustration.png';
+import YoutubePlayer from 'components/YouubePlayer';
 
 const Banner = () => {
   return (
@@ -15,14 +16,35 @@ const Banner = () => {
             title="Welcome to Capflow Consulting LLP"
             description="We are a leading debt syndication firm, empanelled with all major banks and Non-Banking Financial Companies (NBFCs) across India. Our expertise lies in catering to a diverse range of companies ranging from new age startups to well established public listed companies."
           />
+           <Flex sx={styles.inputGroup}>
+              <Label htmlFor="email" variant="styles.srOnly">
+                Email
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                className="email-input"
+                placeholder="Your email"
+              />
+              <Button variant="primary">Get Started</Button>
+            </Flex>
+          {/* <Box as="figure" sx={styles.illustration}>
+         
+            <Image src={illustration} alt="illustration" /> 
+
+            
+           
+       
+          </Box> */}
           
-          <Box as="figure" sx={styles.illustration}>
-            <Box sx={styles.buttonWrapper}>
-              <Button>Get Started</Button>
-            </Box>
-            <Image src={illustration} alt="illustration" />
-          </Box>
         </Box>
+        <Box sx={{ display: ['block', null, null, 'block'],
+      maxWidth: ['90%'],
+      m: ['0 auto'],}}>
+          <YoutubePlayer
+          
+          id={"JYnOtueVfJE"}/>
+          </Box>
       </Container>
     </Box>
   );
@@ -52,6 +74,7 @@ const styles = {
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'flex-end',
+    mb:4,
   },
   heading: {
     mb: [30],
@@ -81,5 +104,8 @@ const styles = {
     left: '50%',
     top: 0,
     transform: ['unset', null, null, 'translateX(-50%)'],
+  },
+  inputGroup: {
+    flexDirection: ['column', null, null, 'row'],
   },
 };

@@ -8,11 +8,12 @@ import thumb1 from 'assets/images/blog/1.png';
 import thumb2 from 'assets/images/blog/2.png';
 import thumb3 from 'assets/images/blog/3.png';
 import thumb4 from 'assets/images/blog/4.png';
+import NextLink from 'next/link';
 
-const data = [
+const blogs =  [
   {
     id: 1,
-    slug: '#how-to',
+    slug: 'how-to1',
     thumbnail: thumb1,
     showDescription: true,
     title: `How to work with prototype design with adobe xd featuring tools`,
@@ -20,55 +21,52 @@ const data = [
   },
   {
     id: 2,
-    slug: '#how-to',
-    thumbnail: null,
-    showDescription: false,
-    title: `Anti bias receives honorable gift mention at Fast Company’s most Innovation by Design Awards`,
+    slug: 'how-to2',
+    thumbnail: thumb1,
+    showDescription: true,
+    title: `How to work with prototype design with adobe xd featuring tools`,
     description: `The 2019 Innovation by Design Awards honor the designers and businesses solving the problems of today and tomorrow. It is one of the most sought-after design`,
   },
   {
     id: 3,
-    slug: '#how-to',
-    thumbnail: thumb3,
-    showDescription: false,
-    title: `Multiple task wireframing with team management perform better`,
+    slug: 'how-to3',
+    thumbnail: thumb1,
+    showDescription: true,
+    title: `How to work with prototype design with adobe xd featuring tools`,
     description: `The 2019 Innovation by Design Awards honor the designers and businesses solving the problems of today and tomorrow. It is one of the most sought-after design`,
   },
   {
     id: 4,
-    slug: '#how-to',
-    thumbnail: thumb2,
+    slug: 'how-to4',
+    thumbnail: thumb1,
     showDescription: true,
-    title: `Multiple art board prototype with Figma`,
-    description: `Beyond launched anti bias, a Chrome extension that replaces LinkedIn profile photos`,
-  },
-  {
-    id: 5,
-    slug: '#how-to',
-    thumbnail: thumb4,
-    showDescription: false,
-    title: `Team presentation with latest user interface & experience reach more`,
+    title: `How to work with prototype design with adobe xd featuring tools`,
     description: `The 2019 Innovation by Design Awards honor the designers and businesses solving the problems of today and tomorrow. It is one of the most sought-after design`,
   },
-  
 ];
 
 const masonryOptions = { originTop: true };
-
+const path ='/'
 const Blog = () => {
   return (
     <Box as="section" id="blog" sx={styles.section}>
       <Container>
+
         <SectionHeading
           sx={styles.heading}
-          title="Popular blog post we update everyday"
-          description="Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click."
+          title="Our Blogs"
         />
+
         <Masonry options={masonryOptions} sx={styles.postContainer}>
-          {data?.map((post) => (
+          {blogs?.map((post) => (
+
+            
+            
             <BlogPost key={post.id} post={post} />
+           
           ))}
         </Masonry>
+        
       </Container>
     </Box>
   );

@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Image, Heading, Text } from 'theme-ui';
 import { rgba } from 'polished';
-import { Link } from 'components/link';
+import { LearnMore, Link } from 'components/link';
 
 const BlogPost = ({ post }) => {
   return (
@@ -26,9 +26,10 @@ const BlogPost = ({ post }) => {
         {post?.showDescription && (
           <Text as="p" sx={styles.description}>
             {post?.description}
-          </Text>
+          </Text> 
         )}
       </Box>
+      <LearnMore label={'Read More'} sx={{mt:2}} path={`/blog/${post.id}`}/>
     </Box>
   );
 };

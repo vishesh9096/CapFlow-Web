@@ -22,6 +22,8 @@ export default function blog() {
           description="Your Trusted financial Advisor"
         />
 
+<Blog />
+
        
       </Layout>
     </ThemeProvider>
