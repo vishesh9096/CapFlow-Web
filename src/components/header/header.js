@@ -21,10 +21,10 @@ export default function Header() {
                   <Box as="ul" sx={styles.navList}>
                     {menuItems.map(({ path, label }, i) => (
                       <li key={i}>
-                        {
-                          label==="Products" || label==="Blog"? <Link path={path} label={label}/>:<NavLink path={path} label={label} />
-
-                        }
+                     
+                          <Link 
+                          sx = {{mx:5}}
+                          path={path} label={label}/>
                         
                       </li>
                     ))}

@@ -1,23 +1,15 @@
 export default [
   {
-    path: 'home',
+    path: '/',
     label: 'Home',
-  },
-  {
-    path: 'services',
-    label: 'Services',
   },
   {
     path: '/products',
     label: 'Products',
   },
   {
-    path: 'why-us',
-    label: 'Why Us',
-  },
-  {
     path: 'blog',
-    label: 'Blog',
+    label: 'Blogs',
   },
   {
     path: 'login',

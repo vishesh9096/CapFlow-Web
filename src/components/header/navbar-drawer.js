@@ -3,12 +3,13 @@
 import { IoMdMenu } from 'react-icons/io';
 import React, { useContext } from 'react';
 import { jsx, Box, Image } from 'theme-ui';
-import { Link } from 'react-scroll';
+
 import { DrawerContext } from 'contexts/drawer/drawer-context';
 import Drawer from 'components/drawer';
 import Logo from 'components/logo';
 import menuItems from './header.data';
 import close from 'assets/images/icons/close.png';
+import { Link } from 'components/link';
 
 const DrawerNav = () => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -46,12 +47,7 @@ const DrawerNav = () => {
           {menuItems.map(({ path, label }, i) => (
             <Box as="li" key={i}>
               <Link
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+               path={path} label={label}
               >
                 {label}
               </Link>
