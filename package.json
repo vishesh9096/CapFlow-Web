@@ -1,9 +1,9 @@
 {
-  "name": "@landing/013-next",
+  "name": "Capflow website",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--openssl-legacy-provider' next dev",
     "build": "next build",
     "serve": "next start",
     "export": "next export",
@@ -24,7 +24,8 @@
     "react-scroll": "^1.8.1",
     "react-stickynode": "^3.0.4",
     "swiper": "^6.4.5",
-    "theme-ui": "^0.3.5"
+    "theme-ui": "^0.3.5",
+    "vercel": "^33.0.2"
   },
   "devDependencies": {
     "imagemin-mozjpeg": "^9.0.0",
