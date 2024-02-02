@@ -23,7 +23,7 @@ export default function Header() {
                       <li key={i}>
                      
                           <Link 
-                          sx = {{mx:5}}
+                          sx = {{mx:5, cursor: 'pointer' }}
                           path={path} label={label}/>
                         
                       </li>

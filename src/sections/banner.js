@@ -107,5 +107,6 @@ const styles = {
   },
   inputGroup: {
     flexDirection: ['column', null, null, 'row'],
+    gap: [2, null, null, 3], 
   },
 };
